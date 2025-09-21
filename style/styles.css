@@ -61,7 +61,7 @@
   transition: transform .35s ease;
 }
 
-.gallery .card:hover img {
+.gallery .card:hover img, .exhibition-card:hover {
   transform: scale(1.05);
 }
 
