@@ -11,7 +11,6 @@
   align-items: center;
 }
 
-/* brand */
 .site-nav .brand{
   color:#e8eef6; 
   text-decoration:none; 
@@ -26,11 +25,9 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  /* gap: 8rem; */
   align-items: center;
 }
 
-/* burger */
 .nav-burger{
   width:40px; 
   height:40px; 
@@ -63,7 +60,6 @@
     top:7px; 
 }
 
-/* top-level menu */
 .menu{ 
     display:flex; 
     gap:.25rem; 
@@ -123,12 +119,10 @@
     background:rgba(255,255,255,.08); 
 }
 
-/* hidden on desktop; shown on mobile */
 .dropdown-caret{ 
     display:none; 
 }
 
-/* -------- mobile -------- */
 @media (max-width:767px){
   .site-nav{ 
     grid-template-columns:40px 1fr auto; 
@@ -137,12 +131,10 @@
     justify-self:center; 
 }
 
-  /* burger -> X */
   #nav-toggle:checked + .nav-burger span{ transform:rotate(45deg); }
   #nav-toggle:checked + .nav-burger span::before{ transform:rotate(90deg); top:0; }
   #nav-toggle:checked + .nav-burger span::after{ opacity:0; }
 
-  /* menu becomes panel */
   .menu{
     position:fixed; inset:64px 12px auto 12px;
     flex-direction:column; 
@@ -167,7 +159,6 @@
     padding:.9rem 1rem; 
 }
 
-  /* dropdown -> accordion */
   .dropdown{ 
     border-top:1px solid rgba(255,255,255,.08); 
     border-radius:.8rem; 
@@ -198,7 +189,6 @@
     transition:transform .2s;
   }
 
-  /* collapse by default, open when checkbox checked */
   .dropdown .submenu{ 
     position:static; 
     transform:none;
@@ -216,7 +206,6 @@
   #drop-exhibitions:checked ~ .dropdown-caret::after{ transform:rotate(-135deg); 
 }
 
-  /* prevent hover opening on mobile */
   .dropdown:hover .submenu{ 
     display:none; 
 }
@@ -225,12 +214,11 @@
 @media (min-width:768px){
   .nav-burger{ 
     display:none; 
-}   /* 👈 hides burger on desktop */
+  }
 }
 
-/* reduced motion */
 @media (prefers-reduced-motion:reduce){
   .nav-burger span,.menu,.submenu{ 
     transition:none; 
-}
+  }
 }
