@@ -1,0 +1,82 @@
+/* -------- Footer (mobile first) -------- */
+.site-footer{
+  background:#0b0b10;
+  color:#f5f7fb;
+  margin-top:3rem;
+  padding:20px 16px;                /* more breathing room on phones */
+  font-size:16px;                   /* readable base size */
+}
+
+.site-footer a{ color:#f5f7fb; text-decoration:none; }
+.site-footer a:hover{ text-decoration:underline; }
+
+/* container */
+.footer-wrap{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;            /* stack on mobile */
+  gap:20px;                         /* space between blocks */
+}
+
+/* block headings + brand */
+.footer-block h3{ font-size:14px; margin:0 0 8px; color:#ffffff; }
+.footer-logo{ font-weight:700; font-size:18px; display:inline-block; margin-bottom:4px; }
+.tagline{ color:#c7c9d1; margin:0; line-height:1.4; }
+
+/* nav: touch-friendly grid on phones */
+.footer-nav ul{
+  list-style:none; padding:0; margin:0;
+  display:grid;
+  grid-template-columns: 1fr 1fr;   /* two columns = shorter lines */
+  column-gap:16px;
+  row-gap:10px;
+}
+.footer-nav li a{ display:block; padding:6px 0; line-height:1.25; }
+
+/* contact */
+.footer-contact address{
+  font-style:normal; color:#c7c9d1; line-height:1.6; margin:0;
+}
+
+/* subtle dividers between blocks on mobile */
+.footer-block{ padding-bottom:12px; border-bottom:1px solid #2a2a35; }
+.footer-block:last-of-type{ border-bottom:none; }
+
+/* bottom bar */
+.footer-btm{
+  max-width:1100px;
+  margin:14px auto 0;
+  padding-top:12px;
+  border-top:1px solid #2a2a35;
+  display:flex;
+  flex-direction:column;            /* stack on phones */
+  gap:8px;
+  align-items:flex-start;
+}
+.footer-btm p{ margin:0; color:#c7c9d1; font-size:14px; }
+
+.legal{
+  list-style:none; padding:0; margin:0;
+  display:flex; flex-wrap:wrap; gap:14px;
+}
+.legal a[aria-disabled="true"]{ opacity:.85; cursor:not-allowed; }
+
+/* -------- Tablet / Desktop -------- */
+@media (min-width:700px){
+  .footer-wrap{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:28px;
+  }
+  .footer-block{ padding-bottom:0; border-bottom:none; }
+  .footer-nav ul{
+    display:flex; flex-direction:column; gap:6px;
+  }
+  .footer-btm{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+  }
+}

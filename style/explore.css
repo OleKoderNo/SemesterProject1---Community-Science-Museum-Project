@@ -1,0 +1,18 @@
+main section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* centers images with spacing */
+    border-radius: 6px; /* optional: soft rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+
+/* Text alignment */
+main section {
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+main h1, main h2 {
+    margin-bottom: 15px;
+}
