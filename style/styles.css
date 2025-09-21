@@ -156,11 +156,11 @@
 }
 
 /* Assign background images by class */
-.cosmology > div{ background-image:url('/images/cosmology.webp'); }
-.evolution  > div{ background-image:url('/images/evolution.webp'); }
-.biology    > div{ background-image:url('/images/biology-and-medicine.webp'); }
-.robotics   > div{ background-image:url('/images/robotics-and-ai.webp'); }
-.ecology    > div{ background-image:url('/images/ecology.webp'); }
+.cosmology > div{ background-image:url('../images/cosmology.webp'); }
+.evolution  > div{ background-image:url('../images/evolution.webp'); }
+.biology    > div{ background-image:url('../images/biology-and-medicine.webp'); }
+.robotics   > div{ background-image:url('../images/robotics-and-ai.webp'); }
+.ecology    > div{ background-image:url('../images/ecology.webp'); }
 
 .exhibition-img-wrapper {
   width: 100%;
